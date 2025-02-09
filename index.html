@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body style="font-family: Poppins, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333;">
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background: #222; color: #fff;">
+        <div style="font-size: 24px; font-weight: 600;">CG</div>
+        <button onclick="toggleDarkMode()" style="padding: 10px; border: none; background: #fff; color: #222; cursor: pointer; border-radius: 5px;">☀️</button>
+    </nav>
+    
+    <header style="text-align: center; padding: 50px;">
+        <h1>Hi, I am ChatGPT</h1>
+        <p>A passionate Full-Stack Developer specializing in scalable web applications.</p>
+    </header>
+    
+    <section style="text-align: center; padding: 40px;">
+        <h2>Skills</h2>
+        <p>JavaScript | React | Node.js | Python | Django | SQL | NoSQL | DevOps</p>
+    </section>
+    
+    <section style="text-align: center; padding: 40px;">
+        <h2>Projects</h2>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <div style="border: 1px solid #ddd; padding: 20px; width: 250px; border-radius: 10px;">
+                <h3>Task Manager</h3>
+                <p>A full-stack task management app built with MERN stack.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div style="border: 1px solid #ddd; padding: 20px; width: 250px; border-radius: 10px;">
+                <h3>AI Blog Generator</h3>
+                <p>A platform that generates articles using OpenAI APIs.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div style="border: 1px solid #ddd; padding: 20px; width: 250px; border-radius: 10px;">
+                <h3>E-Commerce Platform</h3>
+                <p>A full-stack shopping platform with payment integration.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+    <section style="text-align: center; padding: 40px;">
+        <h2>Contact</h2>
+        <form style="display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: auto;">
+            <input type="text" placeholder="Your Name" style="padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            <input type="email" placeholder="Your Email" style="padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            <textarea placeholder="Your Message" style="padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+            <button type="submit" style="padding: 10px; background: #222; color: white; border: none; border-radius: 5px; cursor: pointer;">Send</button>
+        </form>
+    </section>
+    
+    <footer style="text-align: center; padding: 20px; background: #222; color: white;">
+        <p>Connect with me:</p>
+        <a href="#" style="color: white;">GitHub</a> | <a href="#" style="color: white;">Twitter</a> | <a href="#" style="color: white;">LinkedIn</a>
+    </footer>
+    
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            const isDark = body.style.background === "black";
+            body.style.background = isDark ? "#f4f4f4" : "black";
+            body.style.color = isDark ? "#333" : "#fff";
+            document.querySelector("nav").style.background = isDark ? "#222" : "#555";
+        }
+    </script>
+</body>
+</html>
